@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mars Information</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="static/css/style.css">-->
+</head>
+
+<body>
+    <div class="container text-center">
+        
+        <div class="row">
+            <div class="col-lg-12">
+                <h3 class="jumbotron display-2 font-weight-bold">Mission to Mars<br>
+
+                    <a href="/scrape"><button type="button" class="btn btn-primary btn-lg">Scrape New Data</button>
+                    </a>
+                </h3>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class=col-lg-12>
+                <h4 class=text-left>Latest Mars News</h4>
+                <h5 class=text-left>{{ data_dict.news_title }}</h5>
+                <p class=text-left>{{ data_dict.news_haed }}</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
