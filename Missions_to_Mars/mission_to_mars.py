@@ -2,7 +2,7 @@ from splinter import Browser
 from splinter.exceptions import ElementDoesNotExist
 from bs4 import BeautifulSoup
 import pandas as pd
-from datetime import datetime, time
+import time
 
 # In[3]:
 def scrape():
@@ -119,6 +119,7 @@ def scrape():
         "news_title": news_title,
         "news_head": news_head,
         "featured_img": featured_image_url,
+        "table": html_table,
         "Hemisphere_urls": [hemis_url, schiaparelli_hemis_url, syrtis_hemis_url, marineris_hemis_url]}
         #print(f"{hemis_title}: {cerberus_hemis_url},\n{hemis_title_2}: {schiaparelli_hemis_url},\n{hemis_title_3}: {syrtis_hemis_url},\n{hemis_title_4}: {marineris_hemis_url}")
 
